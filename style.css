@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 98vh;
+    background-color: #c367d8;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-family: sans-serif, tahoma;
+}
+
+.card {
+    margin: auto;
+    width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card h2,
+p {
+    margin: 10px 0;
+}
+
+form :where(input, button) {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+form input {
+    border: 1px solid #999;
+}
+
+form button {
+    background-color: #c367d8;
+    color: #fff;
+}
+
+.card .result {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    display: none;
+}
+
+.card .result img {
+    width: 150px;
+}
+
+.error {
+    color: #ff0000;
+    visibility: hidden;
+}
